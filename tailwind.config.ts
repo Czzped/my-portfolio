@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         primaryColor: "#673981",
-        secondaryColor: "#ececec",
+        secondaryColor: "#f6f6f6",
         thirdColor: "#1E293B"
       },
       keyframes: {
