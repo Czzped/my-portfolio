@@ -10,6 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         primaryColor: "#673981",
+        secondaryColor: "#ececec",
+        thirdColor: "#1E293B"
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+          '100%': { transform: 'rotate(-3deg)' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 10s ease-in-out infinite',
       }
     },
   },
