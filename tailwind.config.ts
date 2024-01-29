@@ -15,9 +15,9 @@ const config: Config = {
       },
       keyframes: {
         wiggle: {
-          '0%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(-3deg)' },
+          '0%': { transform: 'rotate(-2deg)' },
+          '50%': { transform: 'rotate(2deg)' },
+          '100%': { transform: 'rotate(-2deg)' },
         }
       },
       animation: {

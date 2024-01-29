@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth text-thirdColor">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen bg-secondaryColor text-thirdColor">
+        <div className="flex flex-col min-h-screen bg-secondaryColor">
           <Header />
           {children}
         </div>

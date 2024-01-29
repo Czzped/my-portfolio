@@ -10,8 +10,8 @@ export function HomeSection() {
     const constraintsRef = useRef(null);
 
     return (
-        <motion.section id="início" className="flex flex-1 flex-col items-center max-w-7xl gap-28 p-8" ref={constraintsRef}>
-            <div className="flex flex-col items-center justify-center text-center gap-20 w-full md:flex-row md:text-start">
+        <motion.section id="início" className="flex flex-1 flex-col min-h-screen items-center max-w-7xl gap-24 p-8" ref={constraintsRef}>
+            <main className="flex flex-col items-center justify-center text-center gap-12 p-4 w-full md:flex-row md:text-start">
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -44,7 +44,7 @@ export function HomeSection() {
                             duration: 15,
                         }}
 
-                        className="min-w-max shadow-lg shadow-thirdColor animate-wiggle rounded-full"
+                        className="min-w-max shadow-lg shadow-thirdColor rounded-full"
                         src="https://cdns-images.dzcdn.net/images/cover/d56efaad75086e7866e9a64a6d830ede/264x264.jpg"
                     />
                 </motion.div>
@@ -122,9 +122,9 @@ export function HomeSection() {
                         </li>
                     </motion.ul>
                 </div>
-            </div>
+            </main>
 
-            <motion.div
+            <motion.footer
                 initial="hidden"
                 animate="visible"
                 variants={
@@ -143,7 +143,7 @@ export function HomeSection() {
                         }
                     }
                 }
-                className="flex flex-col w-full items-start gap-4 ">
+                className="flex flex-col w-full items-start gap-4">
                 <h1 className="text-xl font-semibold">Techs:</h1>
                 <div className="flex flex-wrap gap-4">
                     <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
@@ -151,7 +151,7 @@ export function HomeSection() {
                     <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
                     <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=tailwind,scss" drag dragConstraints={constraintsRef} />
                 </div>
-            </motion.div>
+            </motion.footer>
         </motion.section >
     )
 }
