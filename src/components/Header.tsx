@@ -4,11 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import menuLine from "../assets/menu-line.svg"
-
-import { motion, useScroll } from "framer-motion";
+import ProgressBar from "./ProgressBar";
 
 export default function Header() {
-    const { scrollYProgress } = useScroll();
 
     return (
         <>
@@ -52,10 +50,8 @@ export default function Header() {
                     </ul>
 
                     <Image src={menuLine} className="md:hidden" alt="menu-Line" />
-                </nav > <motion.div
-                    className="bg-primaryColor h-1 fixed top-24 left-0 right-0"
-                    style={{ scaleX: scrollYProgress }}
-                />
+                </nav >
+                <ProgressBar />
             </header >
         </>
     )
