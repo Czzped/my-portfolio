@@ -151,10 +151,10 @@ export function HomeSection() {
                 className="flex flex-col w-full items-start gap-4 p-4">
                 <h1 className="text-xl font-semibold">Techs:</h1>
                 <div className="flex flex-wrap gap-4">
-                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
-                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=js,ts" drag dragConstraints={constraintsRef} />
-                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
-                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=tailwind,scss" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=js,ts" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=tailwind,scss" drag dragConstraints={constraintsRef} />
                 </div>
             </motion.footer>
         </motion.section >
