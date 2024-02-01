@@ -10,9 +10,9 @@ export default function Header() {
 
     return (
         <>
-            <header className="z-40 sticky top-0 w-full flex bg-secondaryColor">
+            <header className="z-40 fixed top-0 w-full flex bg-secondaryColor">
                 <nav className="flex justify-between items-center w-full max-w-7xl px-12 py-8 m-auto" >
-                    <Link href={"#home"}>
+                    <Link href={"#início"}>
                         <h1 className="text-3xl font-bold">
                             pedro.dev
                         </h1>

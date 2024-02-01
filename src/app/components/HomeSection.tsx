@@ -4,13 +4,20 @@ import Link from "next/link"
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { Title } from "@/components/Tittle";
+
+import Image from "next/image";
+
+import linkedinImg from "../../assets/icons/linkedin-img.svg"
+import Icon from "@/components/Icon";
+import { LinkedinLogo } from "phosphor-react";
 
 
 export function HomeSection() {
     const constraintsRef = useRef(null);
 
     return (
-        <motion.section id="início" className="flex flex-1 flex-col min-h-screen items-center max-w-7xl gap-24 p-8" ref={constraintsRef}>
+        <motion.section id="início" className="flex flex-1 flex-col min-h-screen items-center justify-center max-w-7xl gap-24 p-8 mt-4" ref={constraintsRef}>
             <main className="flex flex-col items-center justify-center text-center gap-12 p-4 w-full md:flex-row md:text-start">
                 <motion.div
                     initial="hidden"
@@ -70,9 +77,9 @@ export function HomeSection() {
                             }
                         }
                         className="flex flex-col gap-4">
-                        <h1 className="justify-center text-4xl font-bold break-words text-primaryColor md:text-5xl">
+                        <Title>
                             Desenvolvedor Front-End Para Suas Aplicações
-                        </h1>
+                        </Title>
 
                         <p className="text-lg font-medium md:text-xl">
                             Ola, sou o Pedro. Um amante da tecnologia desde sempre, e apaixonado em desenvolver coisas novas🖤
@@ -97,28 +104,26 @@ export function HomeSection() {
                                 }
                             }
                         }
-                        className="flex justify-center gap-2 md:justify-start">
+                        className="flex justify-center items-center gap-2 md:justify-start">
                         <li>
-                            <Link href="https://github.com/czzped" className="flex p-1 bg-thirdColor rounded-3xl group" target="_blank">
-                                <svg className="stroke-current text-secondaryColor duration-200 group-hover:text-primaryColor"
-                                    xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                                >
+                            <Icon href="https://www.linkedin.com/in/pedro-henrique-costa-4a1813289/">
+                                <svg className="stroke-current text-secondaryColor duration-200 group-hover:text-primaryColor" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
                                     <path d="M8 11l0 5"></path>
                                     <path d="M8 8l0 .01"></path>
                                     <path d="M12 16l0 -5"></path>
                                     <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
                                 </svg>
-                            </Link>
+                            </Icon>
                         </li>
                         <li>
-                            <Link href="https://www.linkedin.com/in/pedro-henrique-costa-4a1813289/" className="flex p-1 bg-thirdColor rounded-3xl group" target="_blank">
+                            <Icon href="https://github.com/czzped">
                                 <svg className="stroke-current text-secondaryColor duration-200 group-hover:text-primaryColor"
                                     xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                                 >
                                     <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
                                 </svg>
-                            </Link>
+                            </Icon>
                         </li>
                     </motion.ul>
                 </div>
@@ -143,7 +148,7 @@ export function HomeSection() {
                         }
                     }
                 }
-                className="flex flex-col w-full items-start gap-4">
+                className="flex flex-col w-full items-start gap-4 p-4">
                 <h1 className="text-xl font-semibold">Techs:</h1>
                 <div className="flex flex-wrap gap-4">
                     <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
