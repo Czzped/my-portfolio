@@ -1,23 +1,17 @@
 "use client"
 
-import Link from "next/link"
-
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Title } from "@/components/Tittle";
 
-import Image from "next/image";
-
-import linkedinImg from "../../assets/icons/linkedin-img.svg"
 import Icon from "@/components/Icon";
-import { LinkedinLogo } from "phosphor-react";
 
 
 export function HomeSection() {
     const constraintsRef = useRef(null);
 
     return (
-        <motion.section id="início" className="flex flex-1 flex-col min-h-screen items-center justify-center max-w-7xl gap-24 p-8 mt-4" ref={constraintsRef}>
+        <motion.section id="início" className="flex flex-1 flex-col min-h-screen items-center justify-center max-w-7xl gap-24 p-8 mt-4">
             <main className="flex flex-col items-center justify-center text-center gap-12 p-4 w-full md:flex-row md:text-start">
                 <motion.div
                     initial="hidden"
@@ -148,13 +142,14 @@ export function HomeSection() {
                         }
                     }
                 }
-                className="flex flex-col w-full items-start gap-4 p-4">
+                ref={constraintsRef}
+                className="flex flex-1 flex-col w-full items-start gap-4 p-4">
                 <h1 className="text-xl font-semibold">Techs:</h1>
                 <div className="flex flex-wrap gap-4">
-                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
-                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=js,ts" drag dragConstraints={constraintsRef} />
-                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
-                    <motion.img className="item cursor-pointer z-50" src="https://skillicons.dev/icons?i=tailwind,scss" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=js,ts" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
+                    <motion.img className="item cursor-pointer" src="https://skillicons.dev/icons?i=tailwind,scss" drag dragConstraints={constraintsRef} />
                 </div>
             </motion.footer>
         </motion.section >

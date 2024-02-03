@@ -14,7 +14,7 @@ export function ProjectsSection() {
             <header className="flex flex-col text-center">
                 <Title>Projetos</Title>
             </header>
-            <main className="flex flex-col gap-40">
+            <main className="flex flex-col gap-32">
                 {
                     projecstList.map(project =>
                         <div key={project.id} className="flex flex-col gap-4 max-w-4xl md:flex-row">

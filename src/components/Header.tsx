@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import Link from "next/link";
 
 import menuLine from "../assets/menu-line.svg"
 import ProgressBar from "./ProgressBar";
@@ -12,40 +11,40 @@ export default function Header() {
         <>
             <header className="z-40 fixed top-0 w-full flex bg-secondaryColor">
                 <nav className="flex justify-between items-center w-full max-w-7xl px-12 py-8 m-auto" >
-                    <Link href={"#início"}>
+                    <a href={"#início"}>
                         <h1 className="text-3xl font-bold">
                             pedro.dev
                         </h1>
-                    </Link>
+                    </a>
 
                     <ul className="hidden gap-4 md:flex items-end">
                         <li>
-                            <Link
+                            <a
                                 href={"#início"}
                                 className="duration-300 text-xl font-semibold hover:text-primaryColor">
                                 início
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 href={"#sobre"}
                                 className="duration-300 text-xl font-semibold hover:text-primaryColor">
                                 sobre
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 href={"#projetos"}
                                 className="duration-300 text-xl font-semibold hover:text-primaryColor">
                                 projetos
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 href={"#contato"}
                                 className="duration-300 text-xl font-semibold hover:text-primaryColor">
                                 contato
-                            </Link>
+                            </a>
                         </li>
                     </ul>
 
