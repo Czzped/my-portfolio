@@ -5,7 +5,7 @@ export function ContactMeSection() {
     const email = "pedrohcosta211@gmail.com"
 
     return (
-        <footer id="contato" className="flex flex-col items-center text-center max-w-7xl gap-12 p-4">
+        <footer id="contato" className="flex flex-col items-center text-center w-full gap-12 p-4">
             <header className="flex flex-col gap-4">
                 <p className="font-bold text-gray-400  max-w-lg text-2xl md:text-3xl">
                     Ficou interessado? Não perca tempo! 👇

@@ -10,7 +10,7 @@ import { Eye, Code } from "phosphor-react";
 
 export function ProjectsSection() {
     return (
-        <section id="projetos" className="flex flex-col max-w-7xl p-4 gap-20">
+        <section id="projetos" className="flex flex-col items-center w-full p-4 gap-20">
             <header className="flex flex-col text-center">
                 <Title>Projetos</Title>
             </header>
