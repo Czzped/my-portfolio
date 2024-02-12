@@ -1,3 +1,4 @@
+import { SubTitle } from "@/components/SubTitle";
 import { Title } from "@/components/Tittle";
 import Image from "next/image";
 
@@ -13,10 +14,15 @@ export default function AboutMeSection() {
                     className="rounded-3xl"
                 />
                 <div className="flex flex-col h-[320px] justify-between gap-2 text-lg">
-                    <Title>Sobre Mim</Title>
+                    <SubTitle>
+                        Sobre Mim
+                    </SubTitle>
+                    <Title>Desenvolvedor Front-End</Title>
                     <div className="flex flex-col flex-1 gap-4 py-2 justify-between items-center md:items-start">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem iste corporis nemo optio enim, unde in praesentium eligendi nesciunt magni dolorem eos! Earum veritatis tempore dolorem iure voluptates temporibus quam?
+                            Olá, meu nome é Pedro. Sou um desenvolvedor Front-End apaixodado em criar coisas bonitas e uteis aos meus usuários. Atualmente utilizo techs como <b>NextJs</b>, <b>ReactJs</b>, <b>TalwindCss</b>, <b>SASS</b> e muito mais!!
+                            <br />
+                            Busco me aprimorar constantemente, com meus interesses e necessidades lado a lado caminhando assim para ser um cada vez melhor profissional.🚀
                         </p>
                         <a href={"#contato"} className="w-48">
                             <button className="w-full duration-300 text-secondaryColor font-bold bg-primaryColor rounded-md border-2 border-primaryColor p-2 hover:mb-2 hover:opacity-90">

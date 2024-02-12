@@ -6,7 +6,7 @@ interface ISubTitleProps extends HtmlHTMLAttributes<HTMLHeadingElement> {
 
 export function SubTitle({ children, ...props }: ISubTitleProps) {
     return (
-        <h2 className="justify-center text-xl font-bold break-words text-thirdColor md:text-2xl"
+        <h2 className="justify-center text-xl font-bold break-words text-thirdColor md:text-3xl"
             {...props}>
             {children}
         </h2>
