@@ -1,5 +1,3 @@
-import Icon from "@/components/Icon"
-
 export function ContactMeSection() {
     const mapsLocation = "https://www.google.com/maps/place/Vitória,+ES/@-20.3254485,-40.3479624,11.64z/data=!4m6!3m5!1s0xb83d5d85374ee9:0x97595e7ea70ed809!8m2!3d-20.3196644!4d-40.3384748!16zL20vMDJ5ZHAz?entry=ttu"
     const email = "pedrohcosta211@gmail.com"
@@ -62,7 +60,7 @@ export function ContactMeSection() {
                 </ul>
             </main>
             <footer
-                className="flex flex-col justify-between items-center text-center gap-2 p-4 border-t-[0.1875rem] border-thirdColor w-[80vw] md:flex-row"
+                className="flex flex-col justify-between items-center text-center gap-2 p-4 border-t-[1px] border-thirdColor w-[80vw] md:flex-row"
             >
                 <p className="font-bold text-lg">
                     feito com ♥ por

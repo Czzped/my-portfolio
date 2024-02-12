@@ -11,7 +11,7 @@ export function HomeSection() {
     const constraintsRef = useRef(null);
 
     return (
-        <motion.section id="início" className="flex flex-col justify-center items-center max-w-4xl min-h-screen gap-20 mt-10 md:mt-4">
+        <motion.section id="início" className="flex flex-col justify-center max-w-4xl min-h-screen gap-20 mt-10 md:mt-4">
             <main className="flex flex-col items-center justify-center text-center gap-12 p-4 w-full md:flex-row md:text-start">
                 <motion.div
                     initial="hidden"
