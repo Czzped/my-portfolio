@@ -13,7 +13,7 @@ export default function AboutMeSection() {
                     height={320}
                     className="rounded-3xl"
                 />
-                <div className="flex flex-col h-[320px] justify-between gap-2 text-lg">
+                <div className="flex flex-col justify-between gap-2 text-lg">
                     <SubTitle>
                         Sobre Mim
                     </SubTitle>
