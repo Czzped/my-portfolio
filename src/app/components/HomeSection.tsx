@@ -145,7 +145,7 @@ export function HomeSection() {
                 ref={constraintsRef}
                 className="flex flex-col w-full items-start gap-4 p-4">
                 <h1 className="text-xl font-semibold">Techs:</h1>
-                <div className="flex flex-wrap gap-2 max-w-[80vw]">
+                <div className="flex flex-wrap gap-2 max-w-[80vw] overflow-hidden">
                     <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
                     <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=js,ts" drag dragConstraints={constraintsRef} />
                     <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
