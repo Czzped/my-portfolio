@@ -1,6 +1,5 @@
 "use client"
 
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Title } from "@/components/Tittle";
 
@@ -8,7 +7,6 @@ import Icon from "@/components/Icon";
 
 
 export function HomeSection() {
-    const constraintsRef = useRef(null);
 
     return (
         <motion.section id="início" className="flex flex-col justify-center max-w-4xl min-h-screen gap-20 mt-10 md:mt-4">
@@ -142,14 +140,29 @@ export function HomeSection() {
                         }
                     }
                 }
-                ref={constraintsRef}
-                className="flex flex-col w-full items-start gap-4 p-4">
+                className="flex flex-col w-full items-start gap-6 p-4">
                 <h1 className="text-xl font-semibold">Techs:</h1>
-                <div className="flex flex-wrap gap-2 max-w-[80vw] p-2 md:p-0">
-                    <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=html,css" drag dragConstraints={constraintsRef} />
-                    <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=js,ts" drag dragConstraints={constraintsRef} />
-                    <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=react,next" drag dragConstraints={constraintsRef} />
-                    <motion.img className="cursor-pointer" src="https://skillicons.dev/icons?i=tailwind,scss" drag dragConstraints={constraintsRef} />
+                <div className="flex flex-wrap gap-4 max-w-[80vw]">
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        className="cursor-pointer" src="https://skillicons.dev/icons?i=html,css" />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        className="cursor-pointer" src="https://skillicons.dev/icons?i=js,ts" />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        className="cursor-pointer" src="https://skillicons.dev/icons?i=react,next" />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        className="cursor-pointer" src="https://skillicons.dev/icons?i=tailwind,scss" />
                 </div>
             </motion.footer>
         </motion.section >
