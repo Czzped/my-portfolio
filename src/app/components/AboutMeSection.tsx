@@ -1,3 +1,5 @@
+import profilePicture from "../../assets/portfolio-imgs/profile-picture.png"
+
 import { SubTitle } from "@/components/SubTitle";
 import { Title } from "@/components/Tittle";
 import Image from "next/image";
@@ -7,17 +9,19 @@ export default function AboutMeSection() {
         <section id="sobre" className="flex flex-col p-8 max-w-7xl">
             <main className="flex flex-col items-center text-center gap-10 md:flex-row md:items-start md:text-start">
                 <Image
-                    src={"https://static.wikia.nocookie.net/jackstauber/images/b/b5/SHOP.jpg/revision/latest?cb=20200308141253"}
+                    src={profilePicture.src}
                     alt="profile-image"
-                    width={320}
-                    height={320}
+                    width={280}
+                    height={280}
                     className="rounded-3xl"
                 />
-                <div className="flex flex-col justify-between gap-2 text-lg">
-                    <SubTitle>
-                        Sobre Mim
-                    </SubTitle>
-                    <Title>Desenvolvedor Front-End</Title>
+                <div className="flex flex-col h-full justify-between gap-12 text-lg">
+                    <div>
+                        <SubTitle>
+                            Sobre Mim
+                        </SubTitle>
+                        <Title>Desenvolvedor Front-End</Title>
+                    </div>
                     <div className="flex flex-col flex-1 gap-4 py-2 justify-between items-center md:items-start">
                         <p>
                             Olá, meu nome é Pedro. Sou um desenvolvedor Front-End apaixodado em criar coisas bonitas e uteis aos meus usuários. Atualmente utilizo techs como <b>NextJs</b>, <b>ReactJs</b>, <b>TalwindCss</b>, <b>SASS</b> e muito mais!!
