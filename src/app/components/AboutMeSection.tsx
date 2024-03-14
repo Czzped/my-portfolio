@@ -29,7 +29,7 @@ export default function AboutMeSection() {
                             Busco me aprimorar constantemente, com meus interesses e necessidades lado a lado caminhando assim para ser um cada vez melhor profissional.🚀
                         </p>
                         <a href={"#contato"} className="w-48">
-                            <button className="w-full duration-300 text-secondaryColor font-bold bg-primaryColor rounded-md border-2 border-primaryColor p-2 hover:mb-2 hover:opacity-90">
+                            <button className="w-full duration-300 text-secondaryColor font-bold bg-primaryColor rounded-md border-2 border-primaryColor p-2 hover:opacity-90">
                                 entre em contato
                             </button>
                         </a>
