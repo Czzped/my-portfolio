@@ -1,20 +1,10 @@
-import profilePicture from "../../assets/portfolio-imgs/profile-picture.png"
-
 import { SubTitle } from "@/components/SubTitle";
 import { Title } from "@/components/Tittle";
-import Image from "next/image";
 
 export default function AboutMeSection() {
     return (
         <section id="sobre" className="flex flex-col p-8 max-w-7xl">
             <main className="flex flex-col items-center text-center gap-10 md:flex-row md:items-start md:text-start">
-                <Image
-                    src={profilePicture.src}
-                    alt="profile-image"
-                    width={280}
-                    height={280}
-                    className="rounded-3xl"
-                />
                 <div className="flex flex-col h-full justify-between gap-12 text-lg">
                     <div>
                         <SubTitle>
