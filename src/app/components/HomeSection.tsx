@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Title } from "@/components/Tittle";
+import profilePicture from "@/assets/portfolio-imgs/profile-picture.jpeg";
 
 import Icon from "@/components/Icon";
 
@@ -29,7 +30,7 @@ export function HomeSection() {
                                 }
                             }
                         }}
-                    className="flex justify-center p-12"
+                    className="flex shrink-0 justify-center p-2 md:p-4"
                 >
                     <motion.img
                         animate={
@@ -43,8 +44,8 @@ export function HomeSection() {
                             duration: 15,
                         }}
 
-                        className="min-w-max shadow-lg shadow-thirdColor rounded-full"
-                        src="https://cdns-images.dzcdn.net/images/cover/d56efaad75086e7866e9a64a6d830ede/264x264.jpg"
+                        className="h-40 w-40 shrink-0 object-cover shadow-lg shadow-thirdColor md:h-72 md:w-72"
+                        src={profilePicture.src}
                     />
                 </motion.div>
 
